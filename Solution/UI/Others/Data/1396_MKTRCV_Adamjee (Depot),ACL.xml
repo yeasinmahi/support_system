@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Product>
+  <items date="2016-08-08" itmid="30398" uom="Sticks" rate="11" quantity="10" />
+  <items date="2016-08-08" itmid="141279" uom="Sticks" rate="12" quantity="20" />
+  <items date="2016-08-08" itmid="141467" uom="Sticks" rate="8" quantity="30" />
+  <items date="2016-08-08" itmid="30409" uom="Dozen" rate="24" quantity="12" />
+  <items date="2016-08-08" itmid="30410" uom="Pcs" rate="16" quantity="12" />
+</Product>

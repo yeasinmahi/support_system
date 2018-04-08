@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Node>
+  <item pId="271" pName="ZDA-Viza Pati-33/25gm" qnt="10" pr="2262.0000" accId="29005" accName="Viza Paty-33(25Gm) L" extId="15" extName="No" extPr="0.00" uom="1041" uomTxt="Gross" currency="1" narration="10 Gross ZDA-Viza Pati-33/25gm Sold To Konabari (Depot),ACL" salesType="26" logisicId="" logisicPrice="0.00" promotion="0.00" commission="0.00" incentiveId="15" incentive="0.00" suppTax="0.0000" vat="0.0000" vatPr="0.0000" promItemId="0" promItem="" promUom="" promUomText="" logisGain="0.00" promPrice="0.00" promItemCOAid="0" />
+  <item pId="282" pName="ZDA-Akij Zarda-22/50gm" qnt="5" pr="4956.0000" accId="29027" accName="Akij Zarda -22(50 Gm) L" extId="15" extName="No" extPr="0.00" uom="1041" uomTxt="Gross" currency="1" narration="5 Gross ZDA-Akij Zarda-22/50gm Sold To Konabari (Depot),ACL" salesType="26" logisicId="" logisicPrice="0.00" promotion="0.00" commission="0.00" incentiveId="15" incentive="0.00" suppTax="0.0000" vat="0.0000" vatPr="0.0000" promItemId="0" promItem="" promUom="" promUomText="" logisGain="0.00" promPrice="0.00" promItemCOAid="0" />
+</Node>

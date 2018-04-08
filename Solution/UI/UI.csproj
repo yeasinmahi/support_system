@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C998B8C-20BE-4645-8ACA-0A4B80E69B13}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\..\Depot_Management\UI\bin\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\..\Depot_Management\UI\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <HintPath>..\..\Depot_Management\UI\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Software Tools\Need For New Project\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Software Tools\Need For New Project\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Software Tools\Need For New Project\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Software Tools\Need For New Project\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\..\Depot_Management\UI\bin\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\..\Depot_Management\UI\bin\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Software\Winrar\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\..\Depot_Management\UI\bin\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\Depot_Management\UI\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\Depot_Management\UI\bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\..\ERP_Development\UI\bin\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\AssetPermission.aspx" />
+    <Content Include="Content\Css\bootstrap.min.css" />
+    <Content Include="Content\Css\Gridstyle.css" />
+    <Content Include="Content\Images\gr-01.png" />
+    <Content Include="Content\Images\gr-02.jpg" />
+    <Content Include="Content\Images\loading.gif" />
+    <Content Include="Content\Images\page-loader.gif" />
+    <Content Include="HR\ACLResponsiblePersonSetup.aspx" />
+    <Content Include="HR\AttendanceUpdate.aspx" />
+    <Content Include="HR\EmployeeAttendance.aspx" />
+    <Content Include="HR\EmpUpdate.aspx" />
+    <Content Include="HR\ERPPermission.aspx" />
+    <Content Include="HR\HrAkijNetPermission.aspx" />
+    <Content Include="HR\LeaveApplication.aspx" />
+    <Content Include="HR\LeaveBalance.aspx" />
+    <Content Include="HR\LoanProcess.aspx" />
+    <Content Include="HR\PrivilegeLeave.aspx" />
+    <Content Include="Others\HallRoomBookingCancelAfterAprv.aspx" />
+    <Content Include="Others\MilkPurchase.aspx" />
+    <Content Include="Others\TADAInfoDelete.aspx" />
+    <Content Include="Others\TADAInfoUpdate.aspx" />
+    <Content Include="Others\Trust.aspx" />
+    <Content Include="Others\WastageSales.aspx" />
+    <Content Include="Others\WoodPurchasePOAdd.aspx" />
+    <Content Include="Sad\InternalLogistic.aspx" />
+    <Content Include="Sad\TransportSupplierTagging.aspx" />
+    <Content Include="Scm\IndentCorrection.aspx" />
+    <Content Include="Scm\Item.aspx" />
+    <Content Include="Scm\ItemApproval.aspx" />
+    <Content Include="Scm\ItemApprovalAFBL.aspx" />
+    <Content Include="Scm\ItemApprovalByPurchase.aspx" />
+    <Content Include="Scm\ItemForAFBL.aspx" />
+    <Content Include="Scm\MRRCorrection.aspx" />
+    <Content Include="Scm\POCorrection.aspx" />
+    <Content Include="Scm\WHPermission.aspx" />
+    <Content Include="Scripts\WebForms\MSAjax\CustomizeScript.js" />
+    <Content Include="Scripts\WebForms\MSAjax\datepickr.min.js" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Erp_Aclpoint.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Css\Application.css" />
+    <Content Include="Content\Css\jquery-ui.css" />
+    <Content Include="Content\Images\employeer.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Exit.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Personal.aspx" />
+    <Content Include="Scripts\WebForms\Customize\PointService.asmx" />
+    <Content Include="Scripts\WebForms\MSAjax\googlemap.js" />
+    <Content Include="Scripts\WebForms\MSAjax\GridviewScroll.min.js" />
+    <Content Include="Scripts\WebForms\MSAjax\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\WebForms\MSAjax\jquery-ui-1.8.22.custom.min.js" />
+    <Content Include="Scripts\WebForms\MSAjax\jquery-ui.min.js" />
+    <Content Include="Scripts\WebForms\MSAjax\jquery.ui.ufd.js" />
+    <Content Include="Scripts\WebForms\MSAjax\json.0.0.1.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MigrateJS.js" />
+    <Content Include="Scripts\WebForms\MSAjax\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\MSAjax\respond.min.js" />
+    <Content Include="UnderMaintanance.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asset\AssetPermission.aspx.cs">
+      <DependentUpon>AssetPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asset\AssetPermission.aspx.designer.cs">
+      <DependentUpon>AssetPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exit.aspx.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exit.aspx.designer.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ACLResponsiblePersonSetup.aspx.cs">
+      <DependentUpon>ACLResponsiblePersonSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ACLResponsiblePersonSetup.aspx.designer.cs">
+      <DependentUpon>ACLResponsiblePersonSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AttendanceUpdate.aspx.cs">
+      <DependentUpon>AttendanceUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AttendanceUpdate.aspx.designer.cs">
+      <DependentUpon>AttendanceUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\EmployeeAttendance.aspx.cs">
+      <DependentUpon>EmployeeAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EmployeeAttendance.aspx.designer.cs">
+      <DependentUpon>EmployeeAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\EmpUpdate.aspx.cs">
+      <DependentUpon>EmpUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EmpUpdate.aspx.designer.cs">
+      <DependentUpon>EmpUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ERPPermission.aspx.cs">
+      <DependentUpon>ERPPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ERPPermission.aspx.designer.cs">
+      <DependentUpon>ERPPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HrAkijNetPermission.aspx.cs">
+      <DependentUpon>HrAkijNetPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HrAkijNetPermission.aspx.designer.cs">
+      <DependentUpon>HrAkijNetPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\LeaveApplication.aspx.cs">
+      <DependentUpon>LeaveApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\LeaveApplication.aspx.designer.cs">
+      <DependentUpon>LeaveApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\LeaveBalance.aspx.cs">
+      <DependentUpon>LeaveBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\LeaveBalance.aspx.designer.cs">
+      <DependentUpon>LeaveBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\LoanProcess.aspx.cs">
+      <DependentUpon>LoanProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\LoanProcess.aspx.designer.cs">
+      <DependentUpon>LoanProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\PrivilegeLeave.aspx.cs">
+      <DependentUpon>PrivilegeLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\PrivilegeLeave.aspx.designer.cs">
+      <DependentUpon>PrivilegeLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\HallRoomBookingCancelAfterAprv.aspx.cs">
+      <DependentUpon>HallRoomBookingCancelAfterAprv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\HallRoomBookingCancelAfterAprv.aspx.designer.cs">
+      <DependentUpon>HallRoomBookingCancelAfterAprv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\MilkPurchase.aspx.cs">
+      <DependentUpon>MilkPurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\MilkPurchase.aspx.designer.cs">
+      <DependentUpon>MilkPurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\TADAInfoDelete.aspx.cs">
+      <DependentUpon>TADAInfoDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\TADAInfoDelete.aspx.designer.cs">
+      <DependentUpon>TADAInfoDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\TADAInfoUpdate.aspx.cs">
+      <DependentUpon>TADAInfoUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\TADAInfoUpdate.aspx.designer.cs">
+      <DependentUpon>TADAInfoUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Trust.aspx.cs">
+      <DependentUpon>Trust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\Trust.aspx.designer.cs">
+      <DependentUpon>Trust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\WastageSales.aspx.cs">
+      <DependentUpon>WastageSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\WastageSales.aspx.designer.cs">
+      <DependentUpon>WastageSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\WoodPurchasePOAdd.aspx.cs">
+      <DependentUpon>WoodPurchasePOAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\WoodPurchasePOAdd.aspx.designer.cs">
+      <DependentUpon>WoodPurchasePOAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.aspx.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personal.aspx.designer.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sad\InternalLogistic.aspx.cs">
+      <DependentUpon>InternalLogistic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sad\InternalLogistic.aspx.designer.cs">
+      <DependentUpon>InternalLogistic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sad\TransportSupplierTagging.aspx.cs">
+      <DependentUpon>TransportSupplierTagging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sad\TransportSupplierTagging.aspx.designer.cs">
+      <DependentUpon>TransportSupplierTagging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\IndentCorrection.aspx.cs">
+      <DependentUpon>IndentCorrection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\IndentCorrection.aspx.designer.cs">
+      <DependentUpon>IndentCorrection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\Item.aspx.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\Item.aspx.designer.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\ItemApproval.aspx.cs">
+      <DependentUpon>ItemApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\ItemApproval.aspx.designer.cs">
+      <DependentUpon>ItemApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\ItemApprovalAFBL.aspx.cs">
+      <DependentUpon>ItemApprovalAFBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\ItemApprovalAFBL.aspx.designer.cs">
+      <DependentUpon>ItemApprovalAFBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\ItemApprovalByPurchase.aspx.cs">
+      <DependentUpon>ItemApprovalByPurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\ItemApprovalByPurchase.aspx.designer.cs">
+      <DependentUpon>ItemApprovalByPurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\ItemForAFBL.aspx.cs">
+      <DependentUpon>ItemForAFBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\ItemForAFBL.aspx.designer.cs">
+      <DependentUpon>ItemForAFBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\MRRCorrection.aspx.cs">
+      <DependentUpon>MRRCorrection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\MRRCorrection.aspx.designer.cs">
+      <DependentUpon>MRRCorrection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\POCorrection.aspx.cs">
+      <DependentUpon>POCorrection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\POCorrection.aspx.designer.cs">
+      <DependentUpon>POCorrection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scm\WHPermission.aspx.cs">
+      <DependentUpon>WHPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scm\WHPermission.aspx.designer.cs">
+      <DependentUpon>WHPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\WebForms\Customize\BundleConfig.cs" />
+    <Compile Include="Scripts\WebForms\Customize\ExportClass.cs" />
+    <Compile Include="Scripts\WebForms\Customize\PointService.asmx.cs">
+      <DependentUpon>PointService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scripts\WebForms\Customize\SessionParams.cs" />
+    <Compile Include="UnderMaintanance.aspx.cs">
+      <DependentUpon>UnderMaintanance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnderMaintanance.aspx.designer.cs">
+      <DependentUpon>UnderMaintanance.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Accounts\Data\" />
+    <Folder Include="Content\Bundle\" />
+    <Folder Include="HR\Data\" />
+    <Folder Include="Others\Data\" />
+    <Folder Include="Reports\Data\" />
+    <Folder Include="Sad\Data\" />
+    <Folder Include="Scm\Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ee6c7926-705a-45df-bb48-fbe7b0535f02}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54591</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54299/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
