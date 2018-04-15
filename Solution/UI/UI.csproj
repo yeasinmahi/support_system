@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -127,6 +128,26 @@
     <Content Include="HR\LeaveBalance.aspx" />
     <Content Include="HR\LoanProcess.aspx" />
     <Content Include="HR\PrivilegeLeave.aspx" />
+    <Content Include="Library\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="Library\AspNet.ScriptManager.jQuery.UI.Combined.dll" />
+    <Content Include="Library\BLL.dll" />
+    <Content Include="Library\DAL.dll" />
+    <Content Include="Library\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="Library\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="Library\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="Library\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="Library\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="Library\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="Library\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="Library\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="Library\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="Library\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Library\MySql.Data.DLL" />
+    <Content Include="Library\System.Web.Optimization.dll" />
+    <Content Include="Library\Telerik.Web.UI.dll" />
+    <Content Include="Library\Telerik.Web.UI.Skins.dll" />
+    <Content Include="Library\UI.dll" />
+    <Content Include="Library\WebGrease.dll" />
     <Content Include="Others\HallRoomBookingCancelAfterAprv.aspx" />
     <Content Include="Others\MilkPurchase.aspx" />
     <Content Include="Others\TADAInfoDelete.aspx" />
