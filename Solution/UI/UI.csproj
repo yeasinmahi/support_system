@@ -170,6 +170,7 @@
     <Content Include="Scripts\WebForms\MSAjax\datepickr.min.js" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Erp_Aclpoint.pubxml" />
+    <None Include="Properties\PublishProfiles\SupportProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
